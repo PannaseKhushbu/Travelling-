@@ -1,0 +1,449 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel.Book Now</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 70vh;
+        }
+
+        /* navbar starts */
+        header {
+
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 2%;
+        }
+
+        .logo {
+            margin-left: -3%;
+        }
+
+        header .logo {
+            font-size: 38px;
+            font-weight: bolder;
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        header .logo span {
+            color: orange;
+            font-size: 58px;
+        }
+
+        .navbar {
+            margin-top: 10px;
+        }
+
+        header .navbar a {
+            color: #fff;
+            font-size: 32px;
+            margin: 1px;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+
+        header .navbar a:hover {
+            color: orange;
+        }
+
+        .icons {
+            margin-top: 10px;
+        }
+
+        header .icons i {
+            font-size: 26px;
+            color: #fff;
+            cursor: pointer;
+            margin-right: 62px;
+        }
+
+        header .icons i:hover {
+            color: orange;
+        }
+
+        header .search-bar-container {
+            display: inline-flex;
+            height: 34px;
+            width: 15px;
+            margin-right: 11%;
+            margin-top: 21px;
+        }
+
+        header .search-bar-container:hover {
+            width: 20px;
+        }
+
+        header .search-bar-container #search-bar {
+            padding: 0;
+            text-transform: none;
+            color: #333;
+            font-size: 20px;
+            border: 2px solid black;
+        }
+
+        .search-bar-container label {
+            color: #333;
+            border: 2px solid black;
+            cursor: pointer;
+            font-size: 20px;
+            background-color: white;
+            padding: 5px;
+        }
+
+        header .search-bar-container label:hover {
+            color: orange;
+        }
+
+        /* navbar ends */
+
+        /* booking section starts */
+        .book {
+            width: 100vw;
+            height: 50vh;
+            margin-top: -8%;
+        }
+
+        .book .image {
+            margin-top: 12%;
+            margin-left: 20%;
+        }
+
+        .book .image img {
+            width: 27%;
+            height: 50vh;
+            box-shadow: 1px 3px 19px 9px #5c5c59;
+        }
+
+        .book .image img:hover {
+            transform: scaleX(-1);
+        }
+
+        .booknow {
+            margin-top: 70px;
+            height: 43%;
+            margin-bottom: -37px;
+            background-image: url(./images/header-bg-1.jpg);
+        }
+
+        .booknow h1 {
+            font-size: 40px;
+            color: white;
+            margin-bottom: 0px;
+            padding-top: 56px;
+            margin-top: 8px;
+            font-weight: bold;
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+        }
+
+        .form {
+            width: 90%;
+            height: 50vh;
+            margin-top: -27%;
+            margin-left: 45%;
+        }
+        .inputbox h3{
+            font-size: 25px;
+            color: black;
+            margin-bottom: 6px;
+        }
+         .form input,
+        textarea {
+            width: 31%;
+            padding: 3px;
+            outline: 0;
+            border: 3px solid #b08308;
+            background: #eee;
+            font-size: 17px;
+            margin-top: 0px;
+        }
+
+        button {
+            height: 34px;
+            width: 161px;
+            font-size: 20px;
+            color: black;
+            background-color: #ebd063;
+            margin-top: 20px;
+            margin-right: 50%;
+            cursor: pointer;
+        }
+        /* booking section ends*/
+
+        /* footer section starts */
+        .container {
+            margin: -5%;
+        }
+
+        .row {
+            display: inline-flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin-left: -39px;
+        }
+
+        .footer {
+            background-color: black;
+            padding: 38px 66px;
+            height: 35vh;
+            margin-top: 7%;
+        }
+
+        .footer-col {
+            width: 17%;
+            padding: 3px 4px;
+            margin-left: 2%;
+            margin-top: 3%;
+        }
+
+        .footer-col .logo {
+            margin-left: -7px;
+        }
+
+        .footer-col .logo span {
+            color: orange;
+            font-size: 41px;
+        }
+
+        .footer-col a {
+            font-size: 27px;
+            font-weight: bolder;
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            margin-top: 22px;
+        }
+
+        .footer-col h4 {
+            font-size: 25px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            margin-top: 5%;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 192px;
+        }
+
+        .footer-col p {
+            font-size: 18px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            display: block;
+            border: 2px solid #f1a20c;
+            padding: 8px;
+            height: 70%;
+            width: 80%;
+            margin-left: 0%;
+            margin-top: 11px;
+        }
+
+        .footer-col ul li:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            font-size: 20px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .footer-col ul li a:hover {
+            color: #ffffff;
+            padding-left: 8px;
+        }
+
+        .footer-col ul li a::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #fbf6f8;
+            height: 2px;
+            box-sizing: border-box;
+            width: 192px;
+        }
+
+        .footer-col .social-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+
+        .footer-col .social-links a:hover {
+            color: #24262b;
+            background-color: #ffffff;
+        }
+
+        .fab {
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: 12px;
+        }
+
+        /* footer section ends */
+    </style>
+</head>
+
+<body>
+    <!-- navbar starts -->
+    <header>
+        <a href="#" class="logo"><span>T</span>ravel</a>
+
+        <nav class="navbar">
+
+            <a href="index.html">home |</a>
+            <a href="about us.html">About Us |</a>
+            <a href="services.html">services |</a>
+            <a href="Gallery.html">gallery |</a>
+            <a href="book.html">book |</a>
+            <a href="index.html">contact </a>
+        </nav>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+        <a href="login form.html" class="icons">
+            <i class="fas fa-user" id="login-btn"></i>
+        </a>
+
+    </header>
+    <!-- navbar ends -->
+
+
+    <!-- book sections starts -->
+    <section>
+        <div class="booknow">
+            <h1>Book Now </h1>
+        </div>
+        <div class="book" id="book">
+            <div class="image">
+                <img src="./images/book-img.svg" alt="Book">
+            </div>
+        </div>
+        <div class="Form">
+            <form action="">
+                <div class="inputBox">
+                    <h3>Where to</h3>
+                    <input type="text" placeholder="Place name">
+                </div>
+                <div class="inputBox">
+                    <h3>How Many</h3>
+                    <input type="number" placeholder="Number of guests">
+                </div>
+                <div class="inputBox">
+                    <h3>Arrivals</h3>
+                    <input type="Date">
+                </div>
+                <div class="inputBox">
+                    <h3>Leaving</h3>
+                    <input type="Date">
+                </div>
+                <button class="Btn">Book now</button>
+            </form>
+        </div>
+    </section>
+    <!-- book section ends -->
+    <!-- footer section starts -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <a href="#" class="logo"><span>T</span>ravel</a>
+                    <p>“All travel has its advantages. If the passenger visits better countries, he may learn to improve
+                        his own. And if fortune carries him to worse, he may learn to enjoy it.”</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Branch Locations</h4>
+                    <ul>
+                        <li><a href="#">India</a></li>
+                        <li><a href="#">USA</a></li>
+                        <li><a href="#">Japan</a></li>
+                        <li><a href="#">France</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4> Quick Contact</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-home">Travel@gmail.com</i></a></li>
+                        <li><a href="#"><i class="fas fa-phone-square"> Jangali Maharaj Rd, Pune, Maharashtra
+                                    411005</i></a></li>
+                        <li><a href="#"><i class="fas fa-envelope">+91-88566 20045</i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4> Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section ends -->
+</body>
+
+</html>

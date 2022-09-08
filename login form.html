@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loginform</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url(bgimg2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+    }
+
+    /* navbar starts */
+    #menu-bar {
+      color: #fff;
+      font-size: 30px;
+      margin-top: 10px;
+      margin-left: -20px;
+    }
+
+    header {
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(12, 12, 12, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2%;
+    }
+
+    .logo {
+      margin-left: -3%;
+    }
+
+    header .logo {
+      font-size: 38px;
+      font-weight: bolder;
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    header .logo span {
+      color: orange;
+      font-size: 58px;
+    }
+
+    .navbar {
+      margin-top: 10px;
+    }
+
+    header .navbar a {
+      color: #fff;
+      font-size: 32px;
+      margin: 1px;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+
+    header .navbar a:hover {
+      color: orange;
+    }
+
+    .icons {
+      margin-top: 10px;
+    }
+
+    header .icons i {
+      font-size: 26px;
+      color: #fff;
+      cursor: pointer;
+      margin-right: 16px;
+    }
+
+    header .icons i:hover {
+      color: orange;
+    }
+
+    header .search-bar-container {
+      display: flex;
+      height: 34px;
+      width: 15px;
+      margin-right: 16%;
+      margin-top: 10px;
+      transition-duration: 2s;
+    }
+
+    header .search-bar-container:hover {
+      width: 20px;
+    }
+
+    header .search-bar-container #search-bar {
+      padding: 0;
+      text-transform: none;
+      color: #333;
+      font-size: 20px;
+      border: 2px solid black;
+    }
+
+    .search-bar-container label {
+      color: #333;
+      border: 2px solid black;
+      cursor: pointer;
+      font-size: 20px;
+      background-color: white;
+      padding: 5px;
+    }
+
+    header .search-bar-container label:hover {
+      color: orange;
+    }
+
+    /* navbar ends */
+
+    /*login form starts  */
+    .login-form-container {
+      position: fixed;
+      min-height: 100vh;
+      width: 100%;
+      background: rgba(0, 0, 0, .7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-form-container form {
+      margin: 4%;
+      padding: 20px;
+      border-radius: 10px;
+      background: #fff;
+      width: 22%;
+    }
+
+    .login-form-container form h3 {
+      font-size: 30px;
+      color: black;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    h3 {
+      margin-top: 10px;
+    }
+
+    .login-form-container form .box {
+      width: 81%;
+      padding: 6px;
+      font-size: 17px;
+      margin: 11px;
+      border: none;
+      box-shadow: 2px 2px #0e0e0e;
+      text-transform: capitalize;
+      background-color: rgb(222 218 212);
+      margin-left: 7%;
+    }
+
+    /* .login-form-container form #remember {
+      margin: 10px;
+    } */
+     /* input[type="checkbox"] {
+      height: 2%;
+      border: 2px solid black;
+      margin-left: 2px;
+    } */
+    input#remember{
+      margin-left: 26px;
+      margin-top: 10px;
+      height: 19px;
+      width: 22px;
+      background-color: #eee;
+    }
+    .login-form-container form label {
+      font-size: 20px;
+      margin-left:1%;
+    }
+
+    .login-form-container form .btn {
+      display: block;
+      width: 45%;
+      padding: 6px;
+      font-size: 22px;
+      color: rgb(251 247 247);
+      margin-left: 30%;
+      margin-top: 28px;
+      background-color: rgb(180 137 88);
+      box-shadow: 2px 2px 2px black;
+    }
+
+    .login-form-container form p {
+      padding: 0;
+      font-size: 20px;
+      color: rgb(14, 13, 13);
+      margin-left: 32px;
+    }
+
+    .login-form-container form p a {
+      color: orange;
+    }
+
+    .login-form-container form p a:hover {
+      color: brown;
+      text-decoration: underline;
+    }
+
+    #fas {
+      font-size: 35px;
+      color:#a47a08;
+      border: 2px solid #a47a08;
+      border-radius: 34px;
+      float: right;
+      margin-right: 40%;
+      margin-top: -2%;
+      padding: 9px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>T</span>ravel</a>
+
+    <nav class="navbar">
+      <a href="index.html">home |</a>
+      <a href="#">book |</a>
+      <a href="#">packages |</a>
+      <a href="#">services |</a>
+      <a href="#">gallery |</a>
+      <a href="#">review |</a>
+      <a href="#">contact </a>
+    </nav>
+
+    <form action="" class="search-bar-container">
+      <input type="search" id="search-bar" placeholder="search here...">
+      <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+      <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+  </header>
+  <div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="popup.html">
+      <i class='fas fa-user-alt' id="fas"></i>
+      <input type="email" required class="box" placeholder="enter your email">
+      <input type="password" class="box" placeholder="enter your password">
+      <input type="checkbox" id="remember">
+      <label for="remember">Remember me</label>
+      <input type="submit" value="Login now" class="btn">
+      <p>forget password? <a href="#">Click here</a></p>
+      <p>don't have and account? <a href="#">Register now</a></p>
+    </form>
+
+  </div>
+</body>
+
+</html>
